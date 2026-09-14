@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Portfolio</title>
+<link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+                <!-- ===== NAVIGATION BAR ===== -->
+  <header>
+    <nav>
+      <div class="logo">MY<span>PORTFOLIO</span></div>
+      <button id="menu-btn">☰</button>
+      <ul id="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#hobbies">Hobbies & Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+                <!-- ===== HOME SECTION ===== -->
+  <section id="home" class="section">
+        <div class="about-container">
+            <div class="about-img">
+                <img src="photo1.jpg" alt="Profile Picture">
+            </div>
+       
+
+             <div class="about-text">  
+                 <h1>Hi, I'm J.C. Anthony N. Ponce</h1>
+                 <p>Welcome to my personal portfolio website.</p>
+            </div>
+        </div>
+  </section>
+
+
+                <!-- ===== ABOUT SECTION ===== -->
+  <section id="about" class="section alt-bg">
+    <h2>About Me</h2>
+    <p>
+      I am a student/aspiring developer who enjoys learning new things and building
+      simple projects. I like exploring technology, creativity, and
+      solving problems. I enjoy creating and experimenting things for fun.
+    </p>
+  </section>
+
+
+                <!-- ===== EDUCATION SECTION ===== -->
+  <section id="education" class="section">
+    <h2>Education</h2>
+    <ul class="edu-list">
+      <li>
+        <h3>Central Philippines State University</h3>
+        <p>Currently a Sophomore</p>
+      </li>
+      <li>
+        <h3>Julio Ledesma National High School (Basic Curriculum / K-12)</h3>
+        <p>2013 - 2014 / 2019 - 2020</p>
+      </li>
+      <li>
+        <h3>Guadalupe Elementary School</h3>
+        <p>2009 - 2010</p>
+      </li>
+    </ul>
+  </section>
+
+
+                <!-- ===== GALLERY SECTION ===== -->
+  <section id="gallery" class="section alt-bg">
+    <h2>Gallery</h2>
+    <div class="gallery-grid">
+      <img src="photo2.jpg" alt="Gallery photo 1">
+      <img src="photo3.jpg" alt="Gallery photo 2">
+      <img src="photo4.jpg" alt="Gallery photo 3">
+      <img src="photo5.jpg" alt="Gallery photo 4">
+      <img src="photo6.jpg" alt="Gallery photo 5">
+      <img src="photo7.jpg" alt="Gallery photo 6">
+      <img src="photo8.jpg" alt="Gallery photo 7">
+      <img src="photo9.jpg" alt="Gallery photo 8">
+      <img src="photo10.jpg" alt="Gallery photo 9">
+    </div>
+    
+  </section>
+
+
+                <!-- ===== HOBBIES AND SKILLS SECTION ===== -->
+  <section id="hobbies" class="section">
+    <h2>Hobbies & Skills</h2>
+
+    <div class="two-columns">
+      <div>
+        <h3>Hobbies</h3>
+        <ul>
+          <li>Watching Movies / News / Documentation / Anime / KDramas</li>
+          <li>Photography (Nature / Scenery / Random & Stolen Shots)</li>
+          <li>Playing Music</li>
+          <li>Mobile Gaming (MLBB / Poke'mon)</li>
+        </ul>
+      </div>
+
+      <div>
+        <h3>Skills</h3>
+        <ul>
+          <li>Handicrafts</li>
+          <li>SMAW Welding</li>
+          <li>Electronic Assemble</li>
+          <li>Basic Designing</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+                <!-- ===== CONTACT SECTION ===== -->
+  <section id="contact" class="section alt-bg">
+    <h2>Contact Me</h2>
+    <form id="contact-form">
+      <label for="name">Name</label>
+      <input type="text" id="name" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" required>
+
+      <label for="message">Message</label>
+      <textarea id="message" rows="5" required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+    <p id="form-status"></p>
+  </section>
+            <div class="mycontact">
+                <div><span>Email: </span>jcanthonyponce@gmail.com</div>
+                <div><span>Facebook: </span>J.C. Anthony N. Ponce</div>
+            </div>   
+                <!-- ===== FOOTER ===== -->
+  <footer>
+    <p>&copy; 2026 J.C. Anthony N. Ponce. All Rights Reserved.</p>
+  </footer>
+
+  <script src="index.js"></script>
+</body>
+</html>
