@@ -1,0 +1,284 @@
+/* ===== BASIC RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* ===== NAVIGATION ===== */
+header {
+  background-color: #2c3e50;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+}
+
+.logo {
+  color: #fff;
+  font-size: 30px;
+  font-weight: bolder;
+}
+.logo span {
+    color: #f1c40f;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#nav-links {
+  list-style: none;
+  display: flex;
+}
+
+#nav-links li {
+  margin-left: 20px;
+}
+
+#nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+#nav-links a:hover {
+  color: #f1c40f;
+}
+
+#menu-btn {
+  display: none;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* ===== SECTIONS ===== */
+.section {
+  padding: 60px 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.alt-bg {
+  background-color: #f4f4f4;
+}
+
+.section h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.section h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.section p {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+
+/* ===== ABOUT IMAGE ===== */
+.about-container {
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.about-img img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 8px;
+    border: 2px solid;
+    border-color: aqua;
+    transition: transform 0.5;
+}
+
+.about-img img:hover {
+  transform: translateY(5px);
+}
+.about-text {
+    flex: 1;
+    min-width: 300px;
+}
+
+.about-text h3 {
+    margin-bottom: 1rem;
+    color: var(--accent);
+}
+
+.about-text p {
+    margin-bottom: 1rem;
+    color: var(--text-muted);
+}
+
+
+/* ===== EDUCATION LIST ===== */
+.edu-list {
+  list-style: none;
+  text-align: left;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.edu-list li {
+  margin-bottom: 20px;
+  border-left: 4px solid #2c3e50;
+  padding-left: 15px;
+}
+
+.edu-list h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+/* ===== GALLERY ===== */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 5px;
+  transition: transfrom 0.5s;
+}
+
+.gallery-grid img:hover {
+  transform: translateY(-5px);
+}
+/* ===== HOBBIES AND SKILLS ===== */
+.two-columns {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  flex-wrap: wrap;
+  text-align: left;
+  margin-top: 20px;
+}
+
+.two-columns ul {
+  list-style: disc;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+/* ===== CONTACT FORM ===== */
+#contact-form {
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+#contact-form label {
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+#contact-form input,
+#contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 14px;
+}
+
+#contact-form button {
+  margin-top: 20px;
+  padding: 12px 25px;
+  background-color: #2c3e50;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+#contact-form button:hover {
+  background-color: #1a252f;
+}
+
+#form-status {
+  margin-top: 15px;
+  font-weight: bold;
+  color: green;
+}
+.mycontact {
+    display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  text-align: left;
+  margin-top: 20px;
+  background-color: #f1c40f;
+}
+.mycontact span{
+  color: rgb(3, 24, 255);
+  font-weight: bold;
+}
+/* ===== FOOTER ===== */
+footer {
+  background-color: #2c3e50;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+/* ===== RESPONSIVE (MOBILE) ===== */
+@media (max-width: 700px) {
+  #menu-btn {
+    display: block;
+  }
+
+  #nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #2c3e50;
+    position: absolute;
+    top: 60px;
+    left: 0;
+  }
+
+  #nav-links.show {
+    display: flex;
+  }
+
+  #nav-links li {
+    margin: 0;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .two-columns {
+    gap: 30px;
+  }
+}
